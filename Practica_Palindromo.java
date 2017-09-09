@@ -10,9 +10,6 @@ import java.util.Stack;
  */
 public class Practica_Palindromo {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack pila = new Stack();
@@ -24,7 +21,7 @@ public class Practica_Palindromo {
         do {
             error = false;
             do {
-                //Validar que solo se ingresen numeros  
+                //Valida que solo se ingrese numeros
                 do {
                     error = false;
                     try {
@@ -47,7 +44,7 @@ public class Practica_Palindromo {
 
                         System.out.println("");
                         System.out.println("------------------------------------------------");
-                        System.out.print("Ingrese la Palabra: ");
+                        System.out.print("Ingrese la palabra: ");
                         palabra = sc.nextLine();
 
                         palabra2 = palabra.replaceAll(" ", "");
@@ -64,7 +61,7 @@ public class Practica_Palindromo {
 
                             }
 
-                            //Agregar pila en un arreglo para poder comparar
+                            //Agrega la pila en un arreglo para poder comparar
                             char[] Letras_Palabra = new char[tamaño2];
                             for (int i = 0; i < tamaño2; i++) {
 
@@ -125,7 +122,7 @@ public class Practica_Palindromo {
 
                             }
 
-                            //Agregar pila en un arreglo para poder comparar
+                            //Agrega la pila en un arreglo para poder comparar
                             char[] Letras_Palabra = new char[tamaño2];
                             for (int i = 0; i < tamaño2; i++) {
 
@@ -134,8 +131,8 @@ public class Practica_Palindromo {
                             }
 
                             //pila 2
-                            //dentro del for primero se aumenta ya que siempre se ignora la letra del medio -
-                            //en el caso de los impares
+                            //dentro del for primero se aumenta ya que siempre se ignora la letra ..
+                            //del medio en el caso de las palabras impares
                             char[] Letras_Palabra2 = new char[tamaño2];
                             int Tamaño_Pila_If2 = tamaño2;
                             for (int i = 0; i < tamaño2; i++) {
